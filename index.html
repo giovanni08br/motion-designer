@@ -60,6 +60,19 @@
                 </div>
                 <div class="c-mockup">
                     <iframe title="vimeo-player" src="https://player.vimeo.com/video/330359127?h=d74cd6c01f?autoplay=1" width="640" height="380" frameborder="0" allowfullscreen></iframe>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <script>
+                        const iframe = document.querySelector('iframe');
+                        const player = new Vimeo.Player(iframe);
+
+                        player.on('play', function() {
+                            console.log('played the video!');
+                        });
+
+                        player.getVideoTitle().then(function(title) {
+                            console.log('title:', title);
+                        });
+                    </script>
                     <!-- <img src="mockup scoot mobil.png" alt="imagem mockup"> -->
                 </div>
             </div>
