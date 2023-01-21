@@ -85,12 +85,35 @@
     line-height: 1.042vw;
 }
 
+@media(max-width:600px){
+    .categorias{
+        display: none;
+    }
+    .idiomas{
+        display: none;
+    }
+    .c-role{
+        display: none;
+    }
+    .header-menu{
+        display: none;
+    }
+}
+
 .introducao-conteudo h1{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 13.333vw;
     color: #fff;
+}
+
+@media(max-width:600px){
+    .introducao-conteudo h1{
+        width: 55vw;
+        text-align: center;
+        font-size: 15vw;
+    }
 }
 
 .introducao-conteudo p{
@@ -103,6 +126,14 @@
     padding-left: 4.167vw;
 }
 
+@media(max-width:600px){
+    .introducao-conteudo p{
+        font-size: 3vw;
+        line-height: 3.7vw;
+    }
+}
+
+
 .introducao-conteudo{
     margin-left: 17.188vw;
     padding-top: 7.083vw;
@@ -112,6 +143,12 @@
 .introducao-conteudo img{
     padding-bottom: 2.083vw;
     padding-left: 4.167vw;
+}
+
+@media(max-width:600px){
+    .introducao-conteudo img{
+        width: 35vw;
+    }
 }
 
 .c-cont-dados{
@@ -211,6 +248,12 @@
     width: 51.042vw;
 }
 
+@media(max-width:600px){
+    .c-avatar{
+        display: none;
+    }
+}
+
 .c-descricao img{
     padding-bottom: 2.500vw;
 }
@@ -281,6 +324,72 @@
     display: flex;
     align-items: flex-start;
     gap: 4.167vw;
+}
+
+.c-icones-redes img{
+    width: 3.125vw;
+}
+
+@media(max-width:600px){
+    .c-descricao h1{
+        font-size: 5vw;
+        text-align: center;
+        padding-top: 4vw;
+    }
+    .c-descricao{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c-descricao p{
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.667vw;
+        line-height: 3.1vw;
+        padding-bottom: 2.500vw;
+        color: #d9d9d9;
+        text-align: center;
+    }
+    .c-descricao h2{
+        font-size: 2.8vw;
+        line-height: 3.4vw;
+        text-align: center;
+        margin-top: 4vw;
+    }
+    .c-icones-redes{
+        justify-content: center;
+        gap: 12vw;
+        padding-top: 2vw;
+    }
+    .c-icones-redes img{
+        width: 5vw;
+    }
+    .c-contatos{
+        flex-direction: column;
+    }
+    .c-contatos h3{
+        font-size: 1.8vw;
+        line-height: 3.4vw;
+        text-align: center;
+        margin-top: 2vw;
+    }
+
+    .c-email{
+        font-size: 2.8vw;
+        line-height: 3.4vw;
+        text-align: center;
+        /* margin-top: 4vw; */
+    }
+
+    .c-email a{
+        font-size: 2.8vw;
+        line-height: 3.4vw;
+        text-align: center;
+        /* margin-top: 4vw; */
+    }
+    .c-telefone{
+        padding-bottom: 8vw;
+    }
 }
 
 /* ---PORTFOLIO--- */
@@ -374,9 +483,52 @@
     color: #fff;
 }
 
+.c-button img{
+    width: 2vw;
+}
+
+@media(max-width:600px){
+    .c-button a{
+        font-size: 2vw;
+    }
+    .c-button{
+        width: 33vw;
+        padding: 1.5vw 0;
+        gap: 1.6vw;
+    }
+}
+
 .c-divisor-portfolio{
     text-align: center;
     padding-bottom: 4.167vw;
+}
+
+@media(max-width:600px){
+    .c-mockup img{
+        width: 60vw;
+    }
+    .c-titulo-portfolio{
+        font-size: 4vw;
+    }
+
+    .c-cont-produtos{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8vw;
+    }
+
+    .c-produtos h1{
+        font-size: 3vw;
+    }
+    .c-produtos h2{
+        font-size: 5vw;
+        line-height: 6vw;
+        flex-wrap: wrap;
+    }
+    .c-produtos p{
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
 }
 
 /* ---FOOTER--- */
@@ -400,4 +552,10 @@
 }
 .c-footer a:hover{
     font-weight: 700;
+}
+
+@media(max-width:600px){
+    .c-footer{
+        display: none;
+    }
 }
